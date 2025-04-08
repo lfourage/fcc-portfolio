@@ -1,26 +1,65 @@
 /*------------------General------------------*/
 
+@font-face {
+  font-family: "hotline-miami";
+  src: url(/src/fonts/FIGHTT3_.ttf), url(/src/fonts/discoduck.ttf);
+}
+
 * {
-  box-sizing: border-box;
   margin: none;
   padding: none;
 }
 
+html {
+  box-sizing: border-box;
+  font-family: hotline-miami;
+}
+
 :root {
-  --background-color-1: hsl(271, 76%, 53%);
-  --background-color-2: hsl(328, 100%, 54%);
-  --font-color: hsl(180, 100%, 50%);
-  --em-color-1: hsl(0, 0%, 11%);
-  --em-color-2: hsl(51, 100%, 50%);
+  --violet: hsl(271, 76%, 53%);
+  --pink: hsl(328, 100%, 54%);
+  --azure: hsl(180, 100%, 50%);
+  --dark: hsl(0, 0%, 11%);
+  --gold: hsl(51, 100%, 50%);
 }
 
 /*------------------Header------------------*/
 
-#navbar {
+header {
   display: block;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  background: linear-gradient(var(--violet), var(--pink));
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-list {
+  display: flex;
+  margin-right: 1.5rem;
+  justify-content: space-between;
+  width: 434px;
+}
+
+.navbar-element {
+  list-style: none;
+}
+
+.navbar-element>a {
+  text-decoration: none;
+  color: var(--gold);
+  text-shadow: 3px 3px 5px var(--dark);
+  font-size: 2rem;
+}
+
+.navbar-element>a:hover {
+  color: var(--pink);
+  text-shadow: 3px 3px var(--azure);
 }
 
 /*--------------------Body-------------------*/
