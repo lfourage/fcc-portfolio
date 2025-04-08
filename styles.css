@@ -7,11 +7,11 @@
 }
 
 :root {
-  --main-color-str: hsl(260, 65%, 23%);
-  --main-color-lgt: hsl(264, 36%, 45%);
-  --background-color: hsl(0, 0%, 15%);
-  --em-color-str: hsl(13, 100%, 61%);
-  --em-color-lgt: hsl(53, 100%, 50%);
+  --background-color-1: hsl(271, 76%, 53%);
+  --background-color-2: hsl(328, 100%, 54%);
+  --font-color: hsl(180, 100%, 50%);
+  --em-color-1: hsl(0, 0%, 11%);
+  --em-color-2: hsl(51, 100%, 50%);
 }
 
 /*------------------Header------------------*/
