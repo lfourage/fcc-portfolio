@@ -1,3 +1,21 @@
+/*------------------General------------------*/
+
+* {
+  box-sizing: border-box;
+  margin: none;
+  padding: none;
+}
+
+:root {
+  --main-color-str: hsl(260, 65%, 23%);
+  --main-color-lgt: hsl(264, 36%, 45%);
+  --background-color: hsl(0, 0%, 15%);
+  --em-color-str: hsl(13, 100%, 61%);
+  --em-color-lgt: hsl(53, 100%, 50%);
+}
+
+/*------------------Header------------------*/
+
 #navbar {
   display: block;
   position: fixed;
