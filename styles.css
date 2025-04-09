@@ -67,6 +67,14 @@ header {
 #welcome-section {
   height: 100vh;
   width: 100vw;
+  background: radial-gradient(
+    circle,
+    var(--pink),
+    var(--gold) 20%,
+    var(--pink) 21%,
+    var(--violet),
+    var(--dark)
+  );
 }
 
 .contact-area {
