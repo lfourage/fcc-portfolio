@@ -1,8 +1,13 @@
 /*------------------General------------------*/
 
 @font-face {
-  font-family: "hotline-miami";
-  src: url(src/fonts/FIGHTT3_.ttf), url(src/fonts/discoduck.ttf);
+  font-family: "hotline-miami1";
+  src: url(src/fonts/FIGHTT3_.ttf);
+}
+
+@font-face {
+  font-family: "hotline-miami2";
+  src: url(src/fonts/discoduck.ttf);
 }
 
 * {
@@ -12,7 +17,8 @@
 
 html {
   box-sizing: border-box;
-  font-family: "hotline-miami";
+  font-family: "hotline-miami1";
+  color: var(--azure);
 }
 
 :root {
@@ -67,6 +73,7 @@ header {
 #welcome-section {
   height: 100vh;
   width: 100vw;
+  text-align: center;
   background: radial-gradient(
     circle,
     var(--pink),
@@ -75,6 +82,13 @@ header {
     var(--violet),
     var(--dark)
   );
+}
+
+#welcome-section>h1 {
+  padding: 12% 10%;
+  font-size: 10rem;
+  width: 80%;
+  text-shadow: 2px 2px var(--dark);
 }
 
 .contact-area {
