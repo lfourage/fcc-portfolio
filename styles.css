@@ -56,14 +56,14 @@ header {
   list-style: none;
 }
 
-.navbar-element>a {
+.navbar-element > a {
   text-decoration: none;
   color: var(--gold);
   text-shadow: 3px 3px 5px var(--dark);
   font-size: 2rem;
 }
 
-.navbar-element>a:hover {
+.navbar-element > a:hover {
   color: var(--pink);
   text-shadow: 3px 3px var(--azure);
 }
@@ -84,7 +84,7 @@ header {
   );
 }
 
-#welcome-section>h1 {
+#welcome-section > h1 {
   padding: 12% 10%;
   font-size: 10rem;
   width: 80%;
@@ -101,7 +101,7 @@ header {
   background: var(--violet);
 }
 
-.contact-area>a {
+.contact-area > a {
   text-decoration: none;
   color: var(--gold);
   font-size: 1.2rem;
