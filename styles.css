@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "hotline-miami";
-  src: url(/src/fonts/FIGHTT3_.ttf), url(/src/fonts/discoduck.ttf);
+  src: url(src/fonts/FIGHTT3_.ttf), url(src/fonts/discoduck.ttf);
 }
 
 * {
