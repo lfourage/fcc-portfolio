@@ -23,7 +23,7 @@ html {
 
 :root {
   --violet: hsl(271, 76%, 53%);
-  --pink: hsl(328, 100%, 54%);
+  --pink: rgb(255, 20, 146);
   --azure: hsl(180, 100%, 50%);
   --dark: hsl(0, 0%, 11%);
   --gold: hsl(51, 100%, 50%);
@@ -98,7 +98,7 @@ header {
 #projects {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
   background-color: var(--violet);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -106,9 +106,9 @@ header {
 }
 
 .project-tile {
-  border: 1px solid black;
   aspect-ratio: 4/3;
-  width: 80%;
+  width: 470px;
+  box-shadow: 3px 3px 50px var(--pink);
 }
 
 /*-Contact-*/
