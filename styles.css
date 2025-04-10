@@ -95,6 +95,22 @@ header {
 
 /*-Work-showcase-*/
 
+#projects {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--violet);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.project-tile {
+  border: 1px solid black;
+  aspect-ratio: 4/3;
+  width: 80%;
+}
+
 /*-Contact-*/
 
 .contact-area {
