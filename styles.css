@@ -38,6 +38,7 @@ header {
   left: 0;
   width: 100vw;
   background: linear-gradient(var(--violet), var(--pink));
+  z-index: 1;
 }
 
 #navbar {
@@ -97,18 +98,23 @@ header {
 
 #projects {
   width: 100vw;
-  height: 100vh;
-  overflow: scroll;
-  background-color: var(--violet);
+  height: fit-content;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
+  background-color: var(--violet);
 }
 
 .project-tile {
   aspect-ratio: 4/3;
   width: 470px;
-  box-shadow: 3px 3px 50px var(--pink);
+  box-shadow: 1px 1px 75px var(--pink);
+}
+
+.project-tile:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 1px 1px 75px var(--gold);
 }
 
 /*-Contact-*/
