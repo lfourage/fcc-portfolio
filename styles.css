@@ -153,3 +153,9 @@ header {
 }
 
 /*------------------Footer-----------------*/
+
+footer {
+  width: 100vw;
+  height: 40px;
+  background: linear-gradient(var(--pink), var(--dark));
+}
