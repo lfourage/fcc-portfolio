@@ -5,7 +5,7 @@
   --pink: rgb(255, 20, 146);
   --azure: hsl(180, 100%, 50%);
   --dark: hsl(0, 0%, 11%);
-  --dark-alpha: hsla(0, 0%, 11%, 60%);
+  --dark-alpha: hsla(0, 0%, 11%, 80%);
   --gold: hsl(51, 100%, 50%);
 }
 
@@ -29,6 +29,15 @@ html {
   font-family: "hotline-miami1";
   color: var(--azure);
   scroll-behavior: smooth;
+  background-color: var(--dark);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*------------------Header------------------*/
@@ -40,7 +49,7 @@ header {
   left: 0;
   width: 100vw;
   background: linear-gradient(var(--violet), var(--pink));
-  z-index: 1;
+  z-index: 999;
 }
 
 #navbar {
@@ -55,12 +64,7 @@ header {
   width: 434px;
 }
 
-.navbar-element {
-  list-style: none;
-}
-
 .navbar-element > a {
-  text-decoration: none;
   color: var(--gold);
   text-shadow: 3px 3px 5px var(--dark);
   font-size: 2rem;
@@ -98,14 +102,13 @@ header {
 
 /*-Work-showcase-*/
 
-#projects {
+#projects-section {
   width: 100vw;
   height: fit-content;
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  background-color: var(--dark);
 }
 
 .project-tile {
@@ -134,7 +137,7 @@ header {
   font-size: 1.5rem;
   box-shadow: 2px 2px 10px var(--dark),
   -2px -2px 10px var(--dark);
-  z-index: 999;
+  z-index: 1;
 }
 
 .project-description-filter {
@@ -165,24 +168,43 @@ header {
   width: 80%;
   margin: 0 10%;
   font-size: 1.6rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: noto-serif-regular,Georgia,serif;
   color: var(--gold);
   text-shadow: 2px 2px var(--dark);
 }
 
 /*-Contact-*/
 
-.contact-area {
-  width: 100vw;
+#contact-section {
+  width: 30vw;
+  margin: 0 35vw 5vh;
+  text-align: center;
+  background-color: var(--pink);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding: 20px 0;
-  background: var(--violet);
+  height: 20vh;
 }
 
-.contact-area > a {
-  text-decoration: none;
+.contact-container {
+  box-sizing: content-box;
+  width: 70%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 3px solid var(--gold);
+  border-bottom: 3px solid var(--gold);
+}
+
+.contact-items {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.contact-items a {
   color: var(--gold);
   font-size: 1.2rem;
 }
