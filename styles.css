@@ -2,6 +2,7 @@
 
 :root {
   --violet: hsl(271, 76%, 53%);
+  --violet-darker: hsl(271, 76%, 20%);
   --pink: rgb(255, 20, 146);
   --azure: hsl(180, 100%, 50%);
   --dark: hsl(0, 0%, 11%);
@@ -88,8 +89,9 @@ header {
     var(--pink),
     var(--gold) 20%,
     var(--pink) 21%,
-    var(--violet),
-    var(--dark)
+    var(--violet) 30%,
+    var(--violet-darker),
+    var(--dark) 90%
   );
 }
 
@@ -103,18 +105,18 @@ header {
 /*-Work-showcase-*/
 
 #projects-section {
-  width: 100vw;
   height: fit-content;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 36vw);
+  margin: 4vh 13vw;
   place-items: center;
 }
 
 .project-tile {
   position: relative;
   aspect-ratio: 4/3;
-  width: 470px;
+  width: 550px;
   box-shadow: 1px 1px 20px var(--pink);
   border: 3px outset var(--dark);
 }
