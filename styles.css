@@ -16,8 +16,8 @@
 }
 
 @font-face {
-  font-family: "bigdex";
-  src: url(src/fonts/Bigdex.ttf);
+  font-family: "vcr";
+  src: url(src/fonts/VCR_OSD_MONO_1.001.ttf);
 }
 
 @font-face {
@@ -162,7 +162,8 @@ header {
 }
 
 .project-name {
-  font-family: bigdex;
+  font-family: vcr;
+  padding: 5px 0;
   position: absolute;
   top: 95%;
   left: 15%;
