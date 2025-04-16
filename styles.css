@@ -11,13 +11,18 @@
 }
 
 @font-face {
-  font-family: "hotline-miami1";
+  font-family: "hotline";
   src: url(src/fonts/FIGHTT3_.ttf);
 }
 
 @font-face {
-  font-family: "hotline-miami2";
-  src: url(src/fonts/discoduck.ttf);
+  font-family: "bigdex";
+  src: url(src/fonts/Bigdex.ttf);
+}
+
+@font-face {
+  font-family: "bellerose";
+  src: url(src/fonts/Bellerose.ttf);
 }
 
 * {
@@ -27,7 +32,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: "hotline-miami1";
+  font-family: "hotline";
   color: var(--azure);
   scroll-behavior: smooth;
   background-color: var(--dark);
@@ -69,6 +74,7 @@ header {
   width: 100vw;
   background: linear-gradient(var(--violet), var(--pink) 95%);
   z-index: 999;
+  border-bottom: 2px solid var(--dark);
 }
 
 #navbar {
@@ -156,6 +162,7 @@ header {
 }
 
 .project-name {
+  font-family: bigdex;
   position: absolute;
   top: 95%;
   left: 15%;
@@ -197,7 +204,7 @@ header {
   width: 80%;
   margin: 0 10%;
   font-size: 1.6rem;
-  font-family: noto-serif-regular, Georgia, serif;
+  font-family: bellerose;
   color: var(--gold);
   text-shadow: 2px 2px var(--dark);
 }
