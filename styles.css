@@ -3,11 +3,13 @@
 :root {
   --violet: hsl(271, 76%, 53%);
   --violet-darker: hsl(271, 76%, 20%);
-  --pink: rgb(255, 20, 146);
+  --pink: hsl(328, 100%, 54%);
+  --pink-alpha: hsla(328, 100%, 54%, 30%);
   --azure: hsl(180, 100%, 50%);
   --dark: hsl(0, 0%, 11%);
   --dark-alpha: hsla(0, 0%, 11%, 80%);
   --gold: hsl(51, 100%, 50%);
+  --gold-alpha: hsla(51, 100%, 50%, 80%);
 }
 
 @font-face {
@@ -60,7 +62,7 @@ a {
     transform: scale(1.1, 1.1);
   }
   100% {
-    color: var(--azure)
+    color: var(--azure);
   }
 }
 
@@ -97,8 +99,7 @@ header {
 
 .navbar-element > a:hover {
   color: var(--pink);
-  text-shadow: 3px 3px var(--azure),
-  0px 0px 3px var(--azure);
+  text-shadow: 3px 3px var(--azure), 0px 0px 3px var(--azure);
 }
 
 /*--------------------Body-------------------*/
@@ -123,7 +124,8 @@ header {
   );
 }
 
-#buildings, #water {
+#buildings,
+#water {
   position: absolute;
   width: 100%;
 }
@@ -166,8 +168,42 @@ header {
 }
 
 .building {
-  background-color: var(--dark);
-  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.windows {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    var(--violet-darker),
+    var(--dark) 15%,
+      transparent 15%,
+      transparent 18%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      var(--violet-darker),
+      var(--dark) 5%,
+      var(--pink) 5%,
+      var(--pink) 12%
+    );
+}
+
+.left .building > * {
+  background: linear-gradient(110deg, var(--violet-darker), var(--dark));
+  box-shadow: -2px 1px 15px var(--pink-alpha);
+}
+
+.left .building {
+  background: linear-gradient(110deg, var(--violet-darker), var(--dark));
+  box-shadow: -2px 1px 15px var(--pink-alpha);
+}
+
+.right .building {
+  background: linear-gradient(-110deg, var(--violet-darker), var(--dark));
+  box-shadow: 2px 1px 15px var(--pink-alpha);
 }
 
 .space {
@@ -177,6 +213,16 @@ header {
 .type-a .bg {
   height: 80%;
   width: 70%;
+}
+
+.type-a .part {
+  height: 30%;
+  width: 98%;
+}
+
+.type-a .ledge {
+  height: 5%;
+  width: 100%;
 }
 
 .type-a .fg.a {
@@ -221,7 +267,7 @@ header {
 
 .type-c .bg.b {
   height: 60%;
-  min-width: 35%;
+  min-width: 38%;
 }
 
 .type-c .bg.c {
@@ -247,11 +293,16 @@ header {
 #water {
   top: 765px;
   height: 255px;
-  background-color: blue;
+  background: radial-gradient(
+    at 50% 0%,
+    var(--gold-alpha),
+    var(--pink-alpha),
+    var(--dark-alpha)
+  );
 }
 
 #welcome-text {
-  display: none;/*tmp*/
+  display: none; /*tmp*/
   font-size: 12rem;
   margin: 0 10vw;
   padding-top: 10vh;
