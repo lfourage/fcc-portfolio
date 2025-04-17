@@ -129,21 +129,129 @@ header {
 }
 
 #buildings {
-  top: 0;
-  left: 0;
-  z-index: 1;
-  height: 40vh;
-  top: 40vh;
+  height: 365px;
+  top: 400px;
   z-index: 0;
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  overflow-x: hidden;
+}
+
+.building-group {
+  position: relative;
+  width: 20vw;
+  height: 100%;
+  min-width: 403px;
+}
+
+.building-group-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.building-group-foreground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.building {
+  background-color: var(--dark);
+  border: 1px solid green;
+}
+
+.space {
+  width: 5%;
+}
+
+.type-a .bg {
+  height: 80%;
+  width: 70%;
+}
+
+.type-a .fg.a {
+  height: 60%;
+  width: 20%;
+}
+
+.type-a .fg.b {
+  height: 50%;
+  width: 25%;
+}
+
+.type-b .bg.a {
+  height: 95%;
+  min-width: 15%;
+}
+
+.type-b .bg.b {
+  height: 70%;
+  min-width: 35%;
+}
+
+.type-b .fg.a {
+  height: 65%;
+  min-width: 30%;
+}
+
+.type-b .fg.b {
+  height: 90%;
+  min-width: 15%;
+}
+
+.type-b .fg.c {
+  height: 35%;
+  min-width: 35%;
+}
+
+.type-c .bg.a {
+  height: 80%;
+  min-width: 20%;
+}
+
+.type-c .bg.b {
+  height: 60%;
+  min-width: 35%;
+}
+
+.type-c .bg.c {
+  height: 50%;
+  min-width: 35%;
+}
+
+.type-c .fg.a {
+  height: 55%;
+  min-width: 27%;
+}
+
+.type-c .fg.b {
+  height: 37%;
+  min-width: 33%;
+}
+
+.type-c .fg.c {
+  height: 90%;
+  min-width: 18%;
 }
 
 #water {
-  top: 80vh;
-  height: 20vh;
-  z-index: 0;
+  top: 765px;
+  height: 255px;
+  background-color: blue;
 }
 
 #welcome-text {
+  display: none;/*tmp*/
   font-size: 12rem;
   margin: 0 10vw;
   padding-top: 10vh;
