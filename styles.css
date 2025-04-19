@@ -306,7 +306,7 @@ header {
   min-width: 15%;
 }
 
-.type-b .trapeze {
+.type-b .fg.b .trapeze {
   height: 3%;
   width: 42%;
   transform: perspective(10px) rotatex(10deg);
@@ -330,6 +330,17 @@ header {
 .type-b .fg.c {
   height: 35%;
   min-width: 35%;
+}
+
+.type-b .fg.c .trapeze {
+  height: 10%;
+  width: 90%;
+  transform: perspective(10px) rotatex(10deg);
+}
+
+.type-b .fg.c .part {
+  width: 100%;
+  height: 90%;
 }
 
 /*C*/
