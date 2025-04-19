@@ -213,13 +213,23 @@ header {
     box-shadow: -2px 1px 15px var(--pink-alpha);
 }
 
-.left .building > *:not(.windows){
+.left .building-group-background .building > *:not(.windows){
   background: linear-gradient(110deg, var(--violet-darker), var(--dark));
   box-shadow: -2px 1px 15px var(--pink-alpha);
 }
 
-.right .building > *:not(.windows){
-  background: linear-gradient(110deg, var(--violet-darker), var(--dark));
+.left .building-group-foreground .building > *:not(.windows){
+  background: linear-gradient(110deg, var(--violet), var(--violet-darker) 70%);
+  box-shadow: -2px 1px 15px var(--pink-alpha);
+}
+
+.right .building-group-background .building > *:not(.windows){
+  background: linear-gradient(-110deg, var(--violet-darker), var(--dark));
+  box-shadow: -2px 1px 15px var(--pink-alpha);
+}
+
+.right .building-group-foreground .building > *:not(.windows){
+  background: linear-gradient(-110deg, var(--violet), var(--violet-darker) 70%);
   box-shadow: -2px 1px 15px var(--pink-alpha);
 }
 
@@ -294,6 +304,27 @@ header {
 .type-b .fg.b {
   height: 90%;
   min-width: 15%;
+}
+
+.type-b .trapeze {
+  height: 3%;
+  width: 42%;
+  transform: perspective(10px) rotatex(10deg);
+}
+
+.type-b .part-top {
+  width: 50%;
+  height: 20%;
+}
+
+.type-b .part-mid {
+  width: 70%;
+  height: 33%;
+}
+
+.type-b .part-bot {
+  width: 100%;
+  height: 45%;
 }
 
 .type-b .fg.c {
