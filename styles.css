@@ -38,6 +38,7 @@ html {
   color: var(--azure);
   scroll-behavior: smooth;
   background-color: var(--dark);
+  overflow-x: hidden;
 }
 
 li {
@@ -63,6 +64,28 @@ a {
   }
   100% {
     color: var(--azure);
+  }
+}
+
+@keyframes water {
+  0% {
+    left: 0;
+  }
+  25% {
+    transform: skewx(10deg);
+    left: -1%;
+  }
+  50% {
+    transform: skewx(-3deg);
+    left: 0;
+  }
+  75% {
+    transform: skewx(10deg);
+    left: -1%;
+  }
+  100% {
+    transform: skewx(0deg);
+    left: 0;
   }
 }
 
@@ -114,7 +137,7 @@ header {
   max-width: 100vw;
   text-align: center;
   background: radial-gradient(
-    circle,
+    circle at 50% 45%,
     var(--pink),
     var(--gold) 20%,
     var(--pink) 21%,
@@ -137,7 +160,6 @@ header {
   display: flex;
   justify-items: center;
   justify-content: space-around;
-  overflow-x: hidden;
 }
 
 .building-group {
@@ -455,17 +477,49 @@ header {
 }
 
 #water {
+  position: relative;
   top: 765px;
   height: 255px;
   background: radial-gradient(
-    at 50% 15%,
+    circle at 50%,
     var(--gold-alpha),
     var(--pink-alpha),
     var(--dark-alpha)
   );
+  transform: scaleY(-1);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
-#welcome-text {/*tmp*/
+.water-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 50%,
+    var(--gold-alpha),
+    var(--pink-alpha),
+    var(--dark-alpha)
+  );
+  z-index: 2;
+}
+
+#buildings-reflection {
+  position: relative;
+  height: 80%;
+  z-index: 0;
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  animation: water 10s linear infinite;
+}
+
+#welcome-text {
+ /* display: none;/*tmp*/
+  position: relative;
+  bottom: 25%;
   font-size: 12rem;
   margin: 0 10vw;
   padding-top: 10vh;
