@@ -245,8 +245,10 @@ header {
 /*A*/
 
 .type-a .bg {
-  height: 80%;
-  width: 70%;
+  height: 75%;
+  width: 90%;
+  position: relative;
+  left: 12%;
 }
 
 .type-a .part {
@@ -260,6 +262,34 @@ header {
 }
 
 .type-a .fg.b {
+  height: 100%;
+  min-width: 30%;
+}
+
+.type-a .roof-top {
+  width: 5%;
+  height: 5%;
+  position: relative;
+  left: 30%;
+}
+
+.type-a .roof-bottom {
+  width: 90%;
+  height: 5%;
+  transform: perspective(15px) rotateX(10deg);
+}
+
+.type-a .part-mid {
+  width: 90%;
+  height: 40%;
+}
+
+.type-a .part-bottom {
+  width: 100%;
+  height: 40%;
+}
+
+.type-a .fg.c {
   height: 50%;
   width: 25%;
 }
@@ -301,6 +331,10 @@ header {
   min-width: 30%;
 }
 
+.type-b .fg.a .part {
+  width: 90%;
+}
+
 .type-b .fg.b {
   height: 90%;
   min-width: 15%;
@@ -322,7 +356,7 @@ header {
   height: 33%;
 }
 
-.type-b .part-bot {
+.type-b .part-bottom {
   width: 100%;
   height: 45%;
 }
@@ -346,8 +380,25 @@ header {
 /*C*/
 
 .type-c .bg.a {
+  height: 100%;
+  width: 20%;
+  position: relative;
+  right: 15%;
+}
+
+.type-c .bg.a .roof-top {
+  height: 10%;
+  width: 60%;
+}
+
+.type-c .bg.a .roof-bottom {
+  height: 10%;
+  width: 85%;
+}
+
+.type-c .bg.a .part{
   height: 80%;
-  min-width: 20%;
+  width: 100%;
 }
 
 .type-c .bg.b {
@@ -356,8 +407,19 @@ header {
 }
 
 .type-c .bg.c {
-  height: 50%;
-  min-width: 35%;
+  height: 60%;
+  width: 35%;
+}
+
+.type-c .bg.c .roof {
+  border-left: 90px solid var(--violet-darker);
+  border-top: 30px solid transparent;
+  border-right: 53px solid transparent;
+}
+
+.type-c .bg.c .part {
+  height: 87%;
+  width: 100%;
 }
 
 .type-c .fg.a {
@@ -375,6 +437,23 @@ header {
   min-width: 18%;
 }
 
+.type-c .fg.c .roof-top {
+  height: 3%;
+  width: 20%;
+  position: relative;
+  right: 20px;
+}
+
+.type-c .fg.c .roof-bottom {
+  height: 2%;
+  width: 100%;
+}
+
+.type-c .fg.c .part{
+  height: 45%;
+  width: 95%;
+}
+
 #water {
   top: 765px;
   height: 255px;
@@ -386,8 +465,7 @@ header {
   );
 }
 
-#welcome-text { 
-  display: none;/*tmp*/
+#welcome-text {/*tmp*/
   font-size: 12rem;
   margin: 0 10vw;
   padding-top: 10vh;
