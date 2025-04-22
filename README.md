@@ -2,9 +2,8 @@
 
 🔗 **Live Website**: [https://lfourage.github.io/fcc-portfolio/](https://lfourage.github.io/fcc-portfolio/)
 
-> ✨ *In this project, I made some custom modifications to the original instructions to achieve a design that reflects my personal style and preferences.*
-
 ---
+![Portfolio-screenshot](https://github.com/user-attachments/assets/b563bbcc-5d77-4009-8cd5-48f1fd9114b4)
 
 ## 🎯 Project Objective
 
@@ -16,14 +15,11 @@ The goal of this project is to build a **personal portfolio webpage** as part of
 
 ## 🖼️ Project Context
 
-This is one of the required projects to earn the **Responsive Web Design Certification** from freeCodeCamp.  
-Through this challenge, I learned how to:
+This project will eventually become my true portfolio, so I went beyond the certification's requirements. I used esthetic inspiration from a videogame that I find particulary appealing,
+Hotline Miami.
 
-- Structure semantic HTML  
-- Style pages using CSS and Flexbox  
-- Implement responsive layouts with media queries  
-- Build smooth in-page navigation  
-- Combine both **design aesthetics** and **technical skills**
+The true goal is to build an appealing portfolio that showcases my abilities.
+To this end, I tried to make a strong first impression with a Welcome Page making use of a marking background, all done using CSS.
 
 ---
 
