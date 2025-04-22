@@ -1,4 +1,4 @@
-# fcc-Portofolio-Webpage ( 🌐 version ) 
+# fcc-Portofolio
 
 🔗 **Live Website**: [https://lfourage.github.io/fcc-portfolio/](https://lfourage.github.io/fcc-portfolio/)
 
