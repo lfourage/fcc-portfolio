@@ -15,17 +15,17 @@
 
 @font-face {
   font-family: "hotline";
-  src: url(src/fonts/FIGHTT3_.ttf);
+  src: url(public/fonts/FIGHTT3_.ttf);
 }
 
 @font-face {
   font-family: "vcr";
-  src: url(src/fonts/VCR_OSD_MONO_1.001.ttf);
+  src: url(public/fonts/VCR_OSD_MONO_1.001.ttf);
 }
 
 @font-face {
   font-family: "bellerose";
-  src: url(src/fonts/Bellerose.ttf);
+  src: url(public/fonts/Bellerose.ttf);
 }
 
 * {
@@ -546,23 +546,36 @@ header {
 .project-tile {
   position: relative;
   aspect-ratio: 4/3;
+  border: 1px solid black;
+  background-color: aliceblue;
+  z-index: 999;
   width: 500px;
 }
 
 .splash {
+  position: relative;
+  display: inline-block;
+}
+
+.splash::before {
+  content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background: repeating-conic-gradient(var(--violet-rd) 0 3%, #0000 0 9%),
-    repeating-conic-gradient(#0000 0 3%, var(--violet-rd) 0 4%) 50% / 90% 80%,
-    repeating-conic-gradient(#0000 0 2%, var(--violet-rd) 0 7%) 50% / 70% 70%,
-    repeating-conic-gradient(#0000 0 8%, var(--violet-rd) 0 70%) 50% / 50% 50%,
-    repeating-conic-gradient(var(--violet-rd) 0 10%, #0000 0 1%) 60% / 60% 70%,
-    radial-gradient(var(--violet-rd) 0 50%, #0000 80% 100%)
-    var(--dark);
-    background-repeat: no-repeat;
-  filter: blur(20px) contrast(20);
-  box-shadow: 0 0 0 50px var(--dark-alpha);
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background-image: url('./public/images/splash-default.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease, filter 0.4s ease;
+}
+
+.splash:hover::before {
+  transform: scale(1.2) rotate(2deg);
+  filter: brightness(1.1) saturate(1.3) invert();
 }
 
 .project-img {
@@ -598,8 +611,9 @@ header {
 }
 
 .project-tile:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.05);
   box-shadow: 1px 1px 35px var(--gold);
+  transition: transform 0.4s ease, filter 0.4s ease;
 }
 
 .project-tile:hover .project-description-filter {
@@ -620,19 +634,6 @@ header {
   font-family: bellerose;
   color: var(--gold);
   text-shadow: 2px 2px var(--dark);
-}
-
-.splash:hover {
-  background: repeating-conic-gradient(var(--gold) 0 3%, #0000 0 9%),
-    repeating-conic-gradient(#0000 0 3%, var(--gold) 0 4%) 50% / 90% 80%,
-    repeating-conic-gradient(#0000 0 2%, var(--gold) 0 7%) 50% / 70% 70%,
-    repeating-conic-gradient(#0000 0 8%, var(--gold) 0 70%) 50% / 50% 50%,
-    repeating-conic-gradient(var(--gold) 0 10%, #0000 0 1%) 60% / 60% 70%,
-    radial-gradient(var(--gold) 0 50%, #0000 80% 100%)
-    var(--dark);
-    background-repeat: no-repeat;
-  filter: blur(20px) contrast(20);
-  box-shadow: 0 0 0 50px var(--dark-alpha);
 }
 
 /*-Contact-*/

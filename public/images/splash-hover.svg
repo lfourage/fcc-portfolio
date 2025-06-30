@@ -1,0 +1,37 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <!-- Haut gauche -->
+  <path fill="#ffd900" d="M40,-25C60,0,55,30,35,45C15,60,-10,50,-30,35C-50,20,-40,-5,-20,-20C0,-35,20,-25,40,-25Z" transform="translate(85 50)" />
+
+  <!-- Haut centre gauche -->
+  <path fill="#ffd900" d="M20,-14C30,-4,30,14,20,26C10,38,-8,30,-18,20C-28,10,-20,-6,-10,-16C0,-26,10,-24,20,-14Z" transform="translate(145 40)" />
+
+  <!-- Haut centre droite -->
+  <path fill="#ffd900" d="M30,-20C45,-5,42,20,25,35C8,50,-15,45,-30,30C-45,15,-35,-5,-20,-20C-5,-35,20,-35,30,-20Z" transform="translate(270 60)" />
+
+  <!-- Haut droite -->
+  <path fill="#ffd900" d="M22,-12C36,0,36,22,22,38C8,54,-10,46,-24,32C-38,18,-28,2,-14,-10C0,-22,10,-20,22,-12Z" transform="translate(325 45)" />
+
+  <!-- Côté gauche haut -->
+  <path fill="#ffd900" d="M17,-13C28,0,28,15,17,25C6,35,-10,30,-20,20C-30,10,-22,-8,-12,-18C-2,-28,6,-25,17,-13Z" transform="translate(65 125)" />
+
+  <!-- Côté gauche bas -->
+  <path fill="#ffd900" d="M34,-20C50,0,46,25,28,40C10,55,-10,45,-26,32C-42,19,-30,-2,-16,-18C-2,-34,10,-32,34,-20Z" transform="translate(60 210)" />
+
+  <!-- Bas gauche -->
+  <path fill="#ffd900" d="M22,-10C34,0,34,20,22,30C10,40,-8,32,-18,20C-28,8,-22,-4,-12,-14C-2,-24,8,-20,22,-10Z" transform="translate(105 250)" />
+
+  <!-- Bas centre gauche -->
+  <path fill="#ffd900" d="M18,-10C28,0,28,12,18,22C8,32,-10,28,-20,18C-30,8,-24,-4,-14,-14C-4,-24,6,-20,18,-10Z" transform="translate(155 260)" />
+
+  <!-- Bas centre droite -->
+  <path fill="#ffd900" d="M40,-23C60,-5,52,22,32,38C12,54,-14,46,-28,28C-42,10,-30,-10,-14,-24C2,-38,20,-38,40,-23Z" transform="translate(245 240)" />
+
+  <!-- Bas droite -->
+  <path fill="#ffd900" d="M28,-14C44,0,44,24,28,38C12,52,-10,44,-26,30C-42,16,-30,2,-16,-12C-2,-26,12,-22,28,-14Z" transform="translate(320 250)" />
+
+  <!-- Côté droit haut -->
+  <path fill="#ffd900" d="M16,-11C26,0,26,14,16,24C6,34,-8,30,-18,18C-28,6,-22,-6,-12,-16C-2,-26,6,-22,16,-11Z" transform="translate(330 110)" />
+
+  <!-- Côté droit bas -->
+  <path fill="#ffd900" d="M14,-10C24,0,24,12,14,22C4,32,-10,28,-20,18C-30,8,-22,-4,-12,-14C-2,-24,4,-20,14,-10Z" transform="translate(330 200)" />
+</svg>
