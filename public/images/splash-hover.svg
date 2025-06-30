@@ -1,37 +1,40 @@
-<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-  <!-- Haut gauche -->
-  <path fill="#ffd900" d="M40,-25C60,0,55,30,35,45C15,60,-10,50,-30,35C-50,20,-40,-5,-20,-20C0,-35,20,-25,40,-25Z" transform="translate(85 50)" />
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" >
+  <defs>
+    <filter id="grunge" x="0" y="0" width="100%" height="100%" >
+      <feTurbulence type="fractalNoise" baseFrequency="0.3" numOctaves="4" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
 
-  <!-- Haut centre gauche -->
-  <path fill="#ffd900" d="M20,-14C30,-4,30,14,20,26C10,38,-8,30,-18,20C-28,10,-20,-6,-10,-16C0,-26,10,-24,20,-14Z" transform="translate(145 40)" />
+  <!-- Taches larges périphériques, bien espacées -->
+  <path d="M310,80 Q350,40 390,80 Q370,110 340,140 Q310,160 290,140 Q310,80 310,80Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M30,150 Q80,130 120,160 Q140,190 120,220 Q80,230 50,210 Q30,180 30,150Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M240,180 Q280,140 320,180 Q350,210 320,240 Q280,240 250,210 Q240,180 240,180Z" fill="#8a2ce2" filter="url(#grunge)" />
 
-  <!-- Haut centre droite -->
-  <path fill="#ffd900" d="M30,-20C45,-5,42,20,25,35C8,50,-15,45,-30,30C-45,15,-35,-5,-20,-20C-5,-35,20,-35,30,-20Z" transform="translate(270 60)" />
+  <!-- Taches moyennes réparties avec plus d’espacement -->
+  <path d="M60,60 Q85,45 110,70 Q130,95 110,120 Q80,115 65,90 Q60,60 60,60Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M170,50 Q200,30 230,60 Q250,90 220,110 Q180,100 170,60 Q170,50 170,50Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M120,140 Q150,120 180,140 Q200,170 170,190 Q130,180 120,140Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M260,130 Q290,100 320,140 Q340,180 310,200 Q270,190 260,130Z" fill="#8a2ce2" filter="url(#grunge)" />
 
-  <!-- Haut droite -->
-  <path fill="#ffd900" d="M22,-12C36,0,36,22,22,38C8,54,-10,46,-24,32C-38,18,-28,2,-14,-10C0,-22,10,-20,22,-12Z" transform="translate(325 45)" />
+  <path d="M50,250 Q85,230 110,260 Q125,290 95,300 Q65,290 50,260 Q50,250 50,250Z" fill="#8a2ce2" filter="url(#grunge)" />
 
-  <!-- Côté gauche haut -->
-  <path fill="#ffd900" d="M17,-13C28,0,28,15,17,25C6,35,-10,30,-20,20C-30,10,-22,-8,-12,-18C-2,-28,6,-25,17,-13Z" transform="translate(65 125)" />
+  <path d="M55,160 Q105,140 145,170 Q160,210 120,230 Q80,220 55,180 Q55,160 55,160Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M200,210 Q250,180 300,210 Q320,250 280,280 Q230,270 200,230 Q200,210 200,210Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M270,240 Q320,220 360,250 Q375,280 335,300 Q280,295 270,260 Q270,240 270,240Z" fill="#8a2ce2" filter="url(#grunge)" />
 
-  <!-- Côté gauche bas -->
-  <path fill="#ffd900" d="M34,-20C50,0,46,25,28,40C10,55,-10,45,-26,32C-42,19,-30,-2,-16,-18C-2,-34,10,-32,34,-20Z" transform="translate(60 210)" />
+  <path d="M35,40 Q45,30 60,45 Q65,65 50,75 Q35,65 35,40Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M80,65 Q90,55 105,70 Q110,90 95,105 Q80,90 80,65Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M130,110 Q145,95 160,110 Q170,130 150,145 Q130,130 130,110Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M270,110 Q285,95 300,110 Q310,135 290,150 Q270,135 270,110Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M310,190 Q325,175 340,190 Q350,215 330,230 Q310,215 310,190Z" fill="#8a2ce2" filter="url(#grunge)" />
 
-  <!-- Bas gauche -->
-  <path fill="#ffd900" d="M22,-10C34,0,34,20,22,30C10,40,-8,32,-18,20C-28,8,-22,-4,-12,-14C-2,-24,8,-20,22,-10Z" transform="translate(105 250)" />
-
-  <!-- Bas centre gauche -->
-  <path fill="#ffd900" d="M18,-10C28,0,28,12,18,22C8,32,-10,28,-20,18C-30,8,-24,-4,-14,-14C-4,-24,6,-20,18,-10Z" transform="translate(155 260)" />
-
-  <!-- Bas centre droite -->
-  <path fill="#ffd900" d="M40,-23C60,-5,52,22,32,38C12,54,-14,46,-28,28C-42,10,-30,-10,-14,-24C2,-38,20,-38,40,-23Z" transform="translate(245 240)" />
-
-  <!-- Bas droite -->
-  <path fill="#ffd900" d="M28,-14C44,0,44,24,28,38C12,52,-10,44,-26,30C-42,16,-30,2,-16,-12C-2,-26,12,-22,28,-14Z" transform="translate(320 250)" />
-
-  <!-- Côté droit haut -->
-  <path fill="#ffd900" d="M16,-11C26,0,26,14,16,24C6,34,-8,30,-18,18C-28,6,-22,-6,-12,-16C-2,-26,6,-22,16,-11Z" transform="translate(330 110)" />
-
-  <!-- Côté droit bas -->
-  <path fill="#ffd900" d="M14,-10C24,0,24,12,14,22C4,32,-10,28,-20,18C-30,8,-22,-4,-12,-14C-2,-24,4,-20,14,-10Z" transform="translate(330 200)" />
+  <!-- Petits éclats sporadiques pour la texture finale -->
+  <path d="M40,30 Q45,20 55,30 Q60,45 50,55 Q40,45 40,30Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M85,40 Q90,30 100,40 Q105,55 95,65 Q85,55 85,40Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M130,70 Q135,60 145,70 Q150,85 140,95 Q130,85 130,70Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M190,90 Q195,80 205,90 Q210,105 200,115 Q190,105 190,90Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M280,80 Q285,70 295,80 Q300,95 290,105 Q280,95 280,80Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M370,40 Q375,30 385,40 Q390,55 380,65 Q370,55 370,40Z" fill="#8a2ce2" filter="url(#grunge)" />
+  <path d="M340,30 Q345,20 355,30 Q360,45 350,55 Q340,45 340,30Z" fill="#8a2ce2" filter="url(#grunge)" />
 </svg>

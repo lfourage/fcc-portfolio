@@ -1,10 +1,10 @@
 /*------------------General------------------*/
 
 :root {
-  --violet: hsl(271, 76%, 53%);
+  --violet: #8a2ce2;
   --violet-darker: hsl(271, 76%, 20%);
   --violet-rd: hsl(298, 100%, 50%);
-  --pink: hsl(328, 100%, 54%);
+  --pink: #ff1492;
   --pink-alpha: hsla(328, 100%, 54%, 30%);
   --azure: hsl(180, 100%, 50%);
   --dark: hsl(0, 0%, 11%);
@@ -564,18 +564,21 @@ header {
   left: -20%;
   width: 140%;
   height: 140%;
-  background-image: url('./public/images/splash-default.svg');
+  background-image: url('./public/images/splash-hover.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   z-index: 0;
   pointer-events: none;
-  transition: opacity 0.4s ease, transform 0.4s ease, filter 0.4s ease;
+  filter: drop-shadow(0 0 10px var(--violet-darker));
+  transition: transform 0.2s ease, filter 1s ease;
 }
 
 .splash:hover::before {
-  transform: scale(1.2) rotate(2deg);
-  filter: brightness(1.1) saturate(1.3) invert();
+  transform: scale(1.15) rotate(1deg);
+  filter:
+    drop-shadow(0 0 10px var(--violet))
+    brightness(1.7);
 }
 
 .project-img {
@@ -612,7 +615,6 @@ header {
 
 .project-tile:hover {
   transform: scale(1.05);
-  box-shadow: 1px 1px 35px var(--gold);
   transition: transform 0.4s ease, filter 0.4s ease;
 }
 
