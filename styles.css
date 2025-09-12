@@ -108,9 +108,10 @@ header {
 }
 
 .navbar-list {
-  display: flex;
-  justify-content: space-between;
-  width: 434px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .navbar-element > a {
@@ -522,11 +523,11 @@ header {
   text-shadow: 8px 8px var(--dark), 0px 8px var(--dark), 11px 0px var(--dark),
     -1px -1px var(--dark);
   animation: welcome 5s ease-in-out infinite;
-  font-size: 12rem;
+  font-size: clamp(3rem, 10vw, 10rem);
 }
 
 #welcome-text > strong {
-  font-size: 15rem;
+  font-size: clamp(4rem, 12vw, 12rem);
   color: var(--pink);
   display: block;
 }
