@@ -538,8 +538,9 @@ header {
   height: fit-content;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: repeat(2, 36vw);
-  margin: 4vh 13vw;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 4vh auto;
+  padding: 0 1rem;
   place-items: center;
   gap: 120px;
 }
