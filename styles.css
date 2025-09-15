@@ -108,10 +108,9 @@ header {
 }
 
 .navbar-list {
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 434px;
 }
 
 .navbar-element > a {
@@ -126,6 +125,10 @@ header {
 }
 
 /*--------------------Body-------------------*/
+
+body {
+  z-index: 1;
+}
 
 /*-Welcome-section-*/
 
@@ -550,7 +553,7 @@ header {
   aspect-ratio: 4/3;
   border: 1px solid black;
   background-color: aliceblue;
-  z-index: 999;
+  z-index: 998;
   width: 500px;
 }
 
@@ -566,7 +569,7 @@ header {
   left: -20%;
   width: 140%;
   height: 140%;
-  background-image: url('./public/images/splash-hover.svg');
+  background-image: url("./public/images/splash-hover.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -578,9 +581,7 @@ header {
 
 .splash:hover::before {
   transform: scale(1.15) rotate(1deg);
-  filter:
-    drop-shadow(0 0 10px var(--violet))
-    brightness(1.7);
+  filter: drop-shadow(0 0 10px var(--violet)) brightness(1.7);
 }
 
 .project-img {
@@ -711,9 +712,27 @@ header {
     display: none;
   }
   .project-tile {
-    width: 325px;
+    width: 300px;
   }
   .project-tile:hover .project-description {
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #welcome-section {
+    height: 50vh;
+  }
+  #welcome-text > strong {
+    font-size: 4rem;
+  }
+  #welcome-text {
+    font-size: 3rem;
+  }
+  .project-tile {
+    width: 250px;
+  }
+  .project-name {
+    font-size: 1rem;
   }
 }
